@@ -1,0 +1,30 @@
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: bisque;
+}
+.container{
+    width: calc(100% - 6%);
+    height: calc(100% - 7%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.floating_button{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+    transform: scale(20px , 40px);
+    background-color: aqua;
+
+    box-shadow: 2px 2px 0.07px #E7FBBE;
+
+    padding: 30px;
+    border-radius: 50%;
+    border: none;
+}
+h1{
+
+}
