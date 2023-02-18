@@ -31,7 +31,7 @@ function FromCompunents() {
     }
   return (
       <div className={s.warppaer} onChange={handelChange} >
-          <label htmlFor='name' >Name</label>
+         {"Hello"} {/* <label htmlFor='name' >Name</label>
           <input type='text' id='name' name='name' required min={20} max={45} value={value.name} />
           <label htmlFor='roolNo' >RoolNo</label>
           <input type='number' id='roolNo' name='roolNo' required min={1} max={45} value={ value.roolNo} />
@@ -43,7 +43,7 @@ function FromCompunents() {
           <input type='text' id='age' name='age' required min={20} max={45} value={ value.age} />
           <label htmlFor='state' >State</label>
           <input type='text' id='state' name='state' required min={20} max={45} value={ value.state} />
-          <button type='submit' onClick={handelSubmit}>Submit</button>
+          <button type='submit' onClick={handelSubmit}>Submit</button> */}
     </div>
   )
 }

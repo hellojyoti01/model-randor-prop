@@ -4,20 +4,33 @@ import s from './home.module.css'
 import ModelCompunent from '../../../compunents/model/model.compunent'
 import FromCompunents from '../../../compunents/from/from.compunents'
 function HomePage() {
-    const [model, setModel] = useState(false)
+    const [isAddStarModelOpen, setIsAddStarModelOpen] = useState(false)
     const handelModal = () => {
         // console.log(this,"This Value")
-         setModel(!model)
+        setIsAddStarModelOpen(!isAddStarModelOpen)
     }
   return (
       <div className={s.wrapper}>
           <div className={s.container}>
               
-        {model && <ModelCompunent rander={() => <FromCompunents />} onClick={ handelModal} titel={`Create A Model`} />}
-              <button type='button' onClick={handelModal.bind(this)} className={ s.floating_button} >➕</button>
+        <ModelCompunent
+          rander={() => <FromCompunents />}
+          onClose={handelModal}
+          titel={`Create A Model`}
+          isOpen={ isAddStarModelOpen}
+        />
+        <button type='button'
+          onClick={handelModal}
+          className={s.floating_button}
+          style={{ display: isAddStarModelOpen ? "none" : "block" }}
+        >➕</button>
           </div>
     </div>
   )
 }
 
 export default HomePage
+
+
+
+//s l  i 
